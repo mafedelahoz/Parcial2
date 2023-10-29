@@ -1,0 +1,31 @@
+<nav class="navbar" style="background-color: #26a2b6;">
+  <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:black;">
+          <img src="logo.png" alt="" width="50px" class="d-inline-block ">
+          TV series
+      </a>
+  </div>
+</nav>
+<div class="container-fluid" id ="tabla">
+  <div class="col-4">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><b>#</b></th>
+          <th><b>Name</b></th>
+          <th><b>Channel</b></th>
+          <th><b>Seasons</b></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let serie of series">
+          <th scope="row"> {{serie.id}}</th>
+      <td> {{serie.name}}  </td>
+      <td> {{serie.channel}} </td>
+      <td> {{serie.seasons}} </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Seasons Average: {{Average}}</p>
+  </div>
+</div>
